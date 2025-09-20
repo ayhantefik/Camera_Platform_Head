@@ -27,11 +27,11 @@
 #define PCLK_GPIO_NUM 22
 
 // WiFi
-const char *ssid = "Ayhan-Wi-Fi";
-const char *password = "ayhan321";
+const char *ssid = "";
+const char *password = "";
 
 // WebSocket address
-const char *websockets_server_host = "192.168.0.195";
+const char *websockets_server_host = "";
 const uint16_t websockets_server_port = 3001;
 
 camera_fb_t *fb = NULL;
