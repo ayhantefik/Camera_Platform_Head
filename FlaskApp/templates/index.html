@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>ESP 32 CAM</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+		<script type="text/javascript" charset="utf-8">
+			var socket = io();
+			socket.on('connect', function() {
+				socket.send('a');
+			})
+			socket.on('message', function(msg) {
+				var messageElement = document.getElementById('textid');
+				messageElement.innerText = msg;
+				socket.send('a');
+			})
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<img class="videoStream" src="/video_feed" alt="Video Stream">
+		</div>
+	</body>
+</html>
