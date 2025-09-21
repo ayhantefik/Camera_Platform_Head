@@ -26,7 +26,6 @@ Flask
 <h2>Setup Instructions</h2>
 
 1. Build 2 Axis Servo Camera Platform and connect pins on UNO R4 WIFI
-</br>
 2. Run websocket_server.py
 </br>
 3. Run flask application
