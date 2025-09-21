@@ -25,21 +25,23 @@ Flask
 
 <h2>Setup Instructions</h2>
 
-Build 2 Axis Servo Camera Platform and connect pins on UNO R4 WIFI
+1. Build 2 Axis Servo Camera Platform and connect pins on UNO R4 WIFI
 </br>
-Run websocket_server.py
+2. Run websocket_server.py
 </br>
-Run flask application
+3. Run flask application
 </br>
-Fill in the Wi-Fi and WebSocket configurations in CameraWebServer.ino and upload the file to the ESP32-CAM.
+4. Open CameraWebServer.ino, fill in your Wi-Fi and WebSocket configurations, and upload it to the ESP32-CAM
 </br>
-Upload Camera_Platform.ino to the UNO R4 WIFI
+5. Upload Camera_Platform.ino to the UNO R4 WIFI
 </br>
-Upload NANO_Movement.ino to the NANO33 BLE
+6. Upload NANO_Movement.ino to the NANO33 BLE
 </br>
-NANO33 BLE need to be main mount (I used headphones)
+7. Mount the Nano 33 BLE as the main mount (for example, on headphones or glasses)
 <h2>Demo</h2>
 
 <img src="./images/demo1.png" />
 </br>
 <img src="./images/demo2.png" />
+</br>
+<img src="./images/demo4.png" />
